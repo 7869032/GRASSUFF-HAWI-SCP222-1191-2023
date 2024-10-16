@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float fahrenheit, celsius;
+    int start = 0, end = 100, increment = 10;
+
+    printf("\nFahrenheit\tCelsius\n");
+    printf("-----------------------\n");
+
+    for (fahrenheit = start; fahrenheit <= end; fahrenheit += increment) {
+        celsius = (fahrenheit - 32) * 5 / 9;
+        printf("%.2f\t\t%.2f\n", fahrenheit, celsius);
+    }
+
+    return 0;
+}
