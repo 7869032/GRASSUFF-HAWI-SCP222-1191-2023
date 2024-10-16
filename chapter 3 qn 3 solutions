@@ -1,0 +1,14 @@
+
+Fahrenheit      Celsius
+-----------------------
+26.00           -3.33
+36.00           2.22
+46.00           7.78
+56.00           13.33
+66.00           18.89
+76.00           24.44
+86.00           30.00
+96.00           35.56
+
+Process returned 0 (0x0)   execution time : 8.557 s
+Press any key to continue.
