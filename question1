@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float fahrenheit, celsius;
+    int start, end, increment;
+
+    // Accept user input for the range and increment
+    printf("Enter starting Fahrenheit value: ");
+    scanf("%d", &start);
+    printf("Enter ending Fahrenheit value: ");
+    scanf("%d", &end);
+    printf("Enter increment value: ");
+    scanf("%d", &increment);
+
+    // Print the table header
+    printf("\nFahrenheit\tCelsius\n");
+    printf("-----------------------\n");
+
+    // Loop through the values and convert
+    for (fahrenheit = start; fahrenheit <= end; fahrenheit += increment) {
+        celsius = (fahrenheit - 32) * 5 / 9;
+        printf("%.2f\t\t%.2f\n", fahrenheit, celsius);
+    }
+
+    return 0;
+}
