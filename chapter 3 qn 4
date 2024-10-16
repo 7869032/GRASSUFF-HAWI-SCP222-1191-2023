@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float miles, kilometers;
+    int start, end, increment;
+
+    printf("Enter starting miles value: ");
+    scanf("%d", &start);
+    printf("Enter ending miles value: ");
+    scanf("%d", &end);
+    printf("Enter increment value: ");
+    scanf("%d", &increment);
+
+    printf("\nMiles\t\tKilometers\n");
+    printf("-----------------------\n");
+
+    for (miles = start; miles <= end; miles += increment) {
+        kilometers = miles * 1.60934;
+        printf("%.2f\t\t%.2f\n", miles, kilometers);
+    }
+
+    return 0;
+}
