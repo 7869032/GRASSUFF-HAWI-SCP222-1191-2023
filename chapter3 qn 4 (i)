@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float pounds, kilograms;
+    int start = 0, end = 100, increment = 10;
+
+    printf("\nPounds\t\tKilograms\n");
+    printf("-----------------------\n");
+
+    for (pounds = start; pounds <= end; pounds += increment) {
+        kilograms = pounds * 0.453592;
+        printf("%.2f\t\t%.2f\n", pounds, kilograms);
+    }
+
+    return 0;
+}
