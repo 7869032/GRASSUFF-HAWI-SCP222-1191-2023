@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float fahrenheit, celsius;
+    int start, end, increment;
+
+    printf("Enter starting Fahrenheit value: ");
+    scanf("%d", &start);
+    printf("Enter ending Fahrenheit value: ");
+    scanf("%d", &end);
+    printf("Enter increment value: ");
+    scanf("%d", &increment);
+
+    printf("\nFahrenheit\tCelsius\n");
+    printf("-----------------------\n");
+
+    fahrenheit = start;
+    while (fahrenheit <= end) {
+        celsius = (fahrenheit - 32) * 5 / 9;
+        printf("%.2f\t\t%.2f\n", fahrenheit, celsius);
+        fahrenheit += increment;
+    }
+
+    return 0;
+}
