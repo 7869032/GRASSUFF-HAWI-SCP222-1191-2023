@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#define TRUE 1
+#define FALSE 0
+typedef int boolean;
+
+int main() {
+    boolean b;
+    b = FALSE;
+    if (b == FALSE) {
+        printf("b is FALSE\n");
+    } else {
+        printf("b is TRUE\n");
+    }
+    return 0;
+}
+
